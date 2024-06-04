@@ -43,7 +43,7 @@ const SideNav = ({ folders }: { folders: any }) => {
                             <SheetClose>About</SheetClose>
                         </Link>
                         <Link href="/liked" role="menuitem">
-                            <SheetClose>My Likes</SheetClose>
+                            <SheetClose>My L$VEs</SheetClose>
                         </Link>
                         <Link href="/" role="menuitem">
                             <SheetClose>Home</SheetClose>
@@ -144,7 +144,7 @@ const Navbar = async () => {
             </div>
             <div>
                 <Link
-                    href="/"
+                    href="https://bet.atl5d.com"
                     className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl"
                 >
                     {SITENAME}
@@ -155,9 +155,9 @@ const Navbar = async () => {
                     <Link
                         href="/liked"
                         className="hover:bg-accent px-2 py-1.5 rounded-md"
-                        aria-label="Open liked videos"
+                        aria-label="Open L$VEd videos"
                     >
-                        Liked Videos
+                        L$VEd Videos
                     </Link>
                     <NavMenu folders={folders}></NavMenu>
                 </div>

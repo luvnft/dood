@@ -24,8 +24,8 @@ export default function Liked() {
 
     if (likedVideos.length === 0) {
         return (
-            <MessageBox title="No liked videos found" variant="info">
-                <p>Like videos to see them here.</p>
+            <MessageBox title="No L$VEd videos found" variant="info">
+                <p>L$VE videos to see them here.</p>
             </MessageBox>
         );
     }
