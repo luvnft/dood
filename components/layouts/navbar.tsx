@@ -45,7 +45,7 @@ const SideNav = ({ folders }: { folders: any }) => {
                         <Link href="/liked" role="menuitem">
                             <SheetClose>My L$VEs</SheetClose>
                         </Link>
-                        <Link href="https://tv.atl5d.com" role="menuitem">
+                        <Link href="https://bet.atl5d.com" role="menuitem">
                             <SheetClose>Home</SheetClose>
                         </Link>
                     </SheetDescription>
@@ -144,7 +144,7 @@ const Navbar = async () => {
             </div>
             <div>
                 <Link
-                    href="https://tv.atl5d.com"
+                    href="https://bet.atl5d.com"
                     className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl"
                 >
                     {SITENAME}
