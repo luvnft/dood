@@ -39,11 +39,11 @@ const SideNav = ({ folders }: { folders: any }) => {
                 <SheetHeader>
                     <SheetTitle>Menu</SheetTitle>
                     <SheetDescription className="flex flex-row justify-around underline">
-                        <Link href="/about" role="menuitem">
+                        <Link href="https://www.atl5d.com/about" role="menuitem">
                             <SheetClose>About</SheetClose>
                         </Link>
                         <Link href="/liked" role="menuitem">
-                            <SheetClose>My L$VEs</SheetClose>
+                            <SheetClose>My L$VE</SheetClose>
                         </Link>
                         <Link href="https://bet.atl5d.com" role="menuitem">
                             <SheetClose>Home</SheetClose>
@@ -144,7 +144,7 @@ const Navbar = async () => {
             </div>
             <div>
                 <Link
-                    href="https://bet.atl5d.com"
+                    href="https://blve.arvrtise.com"
                     className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl"
                 >
                     {SITENAME}
@@ -157,7 +157,7 @@ const Navbar = async () => {
                         className="hover:bg-accent px-2 py-1.5 rounded-md"
                         aria-label="Open L$VEd videos"
                     >
-                        L$VEd Videos
+                        L$VED
                     </Link>
                     <NavMenu folders={folders}></NavMenu>
                 </div>
