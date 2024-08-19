@@ -2,6 +2,18 @@ import { SITENAME } from "@/lib/constants";
 
 const navigation = [
     {
+        name: "HAHZ",
+        href: "https://hahz.arvrtise.com", // Replace with your Telegram link
+        icon: (props: any) => (
+          <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+            <path
+              d="M13.5 2L10 12H15L11 22L17 12H12.5L15 2H13.5Z"
+            />
+          </svg>
+        ),
+      },
+
+    {
         name: "Instagram",
         href: "https://instagram.com/blvetv",
         icon: (props: any) => (
@@ -23,19 +35,6 @@ const navigation = [
             </svg>
         ),
     },
-    {
-        name: "HAHZ",
-        href: "https://hahz.arvrtise.com, // Replace with your Telegram link
-        icon: (props: any) => (
-          <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-            <path
-              fillRule="evenodd"
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.29 8.29L9.77 16.11c-.3.29-.68.44-1.09.44-.11 0-.22-.01-.34-.04-.57-.15-1.06-.52-1.34-1.02l-1.63-2.88 8.59-3.53c.26-.11.54-.17.83-.17.58 0 1.07.3 1.33.79.28.52.15 1.12-.33 1.53zM9.99 14.2l.56.99c.12.21.33.32.56.32.06 0 .11-.01.17-.03l4.64-2.85c.18-.11.23-.36.1-.54-.13-.18-.38-.23-.56-.1l-4.24 2.6-.68-.77z"
-              clipRule="evenodd"
-            />
-          </svg>
-        ),
-      },
       
 ];
 
