@@ -33,43 +33,41 @@ const SideNav = ({ folders }: { folders: any }) => {
                     className="size-6"
                     role="menu"
                     aria-label="Open Menu"
-                ></HamburgerMenuIcon>
+                />
             </SheetTrigger>
             <SheetContent side={"left"}>
                 <SheetHeader>
                     <SheetTitle>Menu</SheetTitle>
-                    <SheetDescription className="flex flex-row justify-around underline">
-                        <Link href="https://www.atl5d.com/about" role="menuitem">
-                            <SheetClose>About</SheetClose>
-                        </Link>
-                        <Link href="/liked" role="menuitem">
-                            <SheetClose>My L$VE</SheetClose>
-                        </Link>
-                        <Link href="https://bet.atl5d.com" role="menuitem">
-                            <SheetClose>Home</SheetClose>
-                        </Link>
-                    </SheetDescription>
                 </SheetHeader>
+                <div className="flex flex-col space-y-2 p-4">
+                    <Link href="https://www.tiktok.com/@blkluvtv/video/7401942200541613343" role="menuitem">
+                        <SheetClose className="underline">Mint L$VE</SheetClose>
+                    </Link>
+                    <Link href="/liked" role="menuitem">
+                        <SheetClose className="underline">My L$VE</SheetClose>
+                    </Link>
+                    <Link href="https://bet.atl5d.com" role="menuitem">
+                        <SheetClose className="underline">Home</SheetClose>
+                    </Link>
+                </div>
                 <div className="grid gap-4 py-4 my-4">
-                    {folders.map((folder: any) => {
-                        return (
-                            <Link
-                                href={`/c/${folder.fld_id}`}
-                                key={folder.code}
-                                className="w-full"
-                                role="menuitem"
-                            >
-                                <SheetClose className="flex flex-col transition-colors bg-accent text-accent-foreground px-2 py-1 rounded-md w-full">
-                                    <h1 className="text-xl font-semibold">
-                                        {folder.name}
-                                    </h1>
-                                    <span className="text-[0.65rem] uppercase text-muted-foreground">
-                                        {folder.total_files} videos
-                                    </span>
-                                </SheetClose>
-                            </Link>
-                        );
-                    })}
+                    {folders.map((folder: any) => (
+                        <Link
+                            href={`/c/${folder.fld_id}`}
+                            key={folder.code}
+                            className="w-full"
+                            role="menuitem"
+                        >
+                            <SheetClose className="flex flex-col transition-colors bg-accent text-accent-foreground px-2 py-1 rounded-md w-full">
+                                <h1 className="text-xl font-semibold">
+                                    {folder.name}
+                                </h1>
+                                <span className="text-[0.65rem] uppercase text-muted-foreground">
+                                    {folder.total_files} videos
+                                </span>
+                            </SheetClose>
+                        </Link>
+                    ))}
                 </div>
             </SheetContent>
         </Sheet>
