@@ -41,10 +41,16 @@ const SideNav = ({ folders }: { folders: any }) => {
                 </SheetHeader>
                 <div className="flex flex-col space-y-2 p-4">
                     <Link href="https://www.tiktok.com/@blkluvtv/video/7401942200541613343" role="menuitem">
+                        <SheetClose className="underline">How To Mint L$VE</SheetClose>
+                    </Link>
+                    <Link href="https://unisat.io/brc20/L$VE" role="menuitem">
                         <SheetClose className="underline">Mint L$VE</SheetClose>
                     </Link>
                     <Link href="/liked" role="menuitem">
                         <SheetClose className="underline">My L$VE</SheetClose>
+                    </Link>
+                    <Link href="https://www.tiktok.com/@blkluvtv/video/7401942200541613343" role="menuitem">
+                        <SheetClose className="underline">PPV Telegram</SheetClose>
                     </Link>
                     <Link href="https://bet.atl5d.com" role="menuitem">
                         <SheetClose className="underline">Home</SheetClose>
